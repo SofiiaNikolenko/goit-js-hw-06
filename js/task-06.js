@@ -4,7 +4,7 @@ const lengthInput = nameInput.dataset.length;
 nameInput.addEventListener("blur", inputEvent);
 
 function inputEvent(event) { 
-    if (event.currentTarget.value.length >= lengthInput) {
+    if (event.currentTarget.value.length == lengthInput) {
         nameInput.classList.remove("invalid");
         nameInput.classList.add("valid");
     } else {
